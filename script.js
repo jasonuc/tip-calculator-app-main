@@ -24,7 +24,7 @@ const reset = () => {
 }
 
 const calculatePercent5 = () => {
-    if (billAmount.value > 0 && peopleCount.value > 0) {
+    if (Number(billAmount.value) > 0 && Number(peopleCount.value) > 0) {
         let calcTipAmount = Math.floor((5/100) * billAmount.value)
         tipAmount.innerText = calcTipAmount
         let calcTotalPerPerson = Math.floor((billAmount.value / peopleCount.value) + calcTipAmount)
@@ -33,8 +33,8 @@ const calculatePercent5 = () => {
 }
 
 const calculatePercent10 = () => {
-    if (billAmount.value > 0 && peopleCount.value > 0) {
-        let calcTipAmount = Math.floor((5/100) * billAmount.value)
+    if (Number(billAmount.value) > 0 && Number(peopleCount.value) > 0) {
+        let calcTipAmount = Math.floor((10/100) * billAmount.value)
         tipAmount.innerText = calcTipAmount
         let calcTotalPerPerson = Math.floor((billAmount.value / peopleCount.value) + calcTipAmount)
         totalPerPerson.innerText = `$${calcTotalPerPerson}`
@@ -42,8 +42,8 @@ const calculatePercent10 = () => {
 }
 
 const calculatePercent15 = () => {
-    if (billAmount.value > 0 && peopleCount.value > 0) {
-        let calcTipAmount = Math.floor((5/100) * billAmount.value)
+    if (Number(billAmount.value) > 0 && Number(peopleCount.value) > 0) {
+        let calcTipAmount = Math.floor((15/100) * billAmount.value)
         tipAmount.innerText = calcTipAmount
         let calcTotalPerPerson = Math.floor((billAmount.value / peopleCount.value) + calcTipAmount)
         totalPerPerson.innerText = `$${calcTotalPerPerson}`
@@ -51,8 +51,8 @@ const calculatePercent15 = () => {
 }
 
 const calculatePercent25 = () => {
-    if (billAmount.value > 0 && peopleCount.value > 0) {
-        let calcTipAmount = Math.floor((5/100) * billAmount.value)
+    if (Number(billAmount.value) > 0 && Number(peopleCount.value) > 0) {
+        let calcTipAmount = Math.floor((25/100) * billAmount.value)
         tipAmount.innerText = calcTipAmount
         let calcTotalPerPerson = Math.floor((billAmount.value / peopleCount.value) + calcTipAmount)
         totalPerPerson.innerText = `$${calcTotalPerPerson}`
@@ -60,8 +60,8 @@ const calculatePercent25 = () => {
 }
 
 const calculatePercent50 = () => {
-    if (billAmount.value > 0 && peopleCount.value > 0) {
-        let calcTipAmount = Math.floor((5/100) * billAmount.value)
+    if (Number(billAmount.value) > 0 && Number(peopleCount.value) > 0) {
+        let calcTipAmount = Math.floor((50/100) * billAmount.value)
         tipAmount.innerText = calcTipAmount
         let calcTotalPerPerson = Math.floor((billAmount.value / peopleCount.value) + calcTipAmount)
         totalPerPerson.innerText = `$${calcTotalPerPerson}`
