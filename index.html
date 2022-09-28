@@ -21,31 +21,29 @@
       <h3>Bill</h3>
       <div class="price">
         <div id="dollar-sign"><img src="./resources/images/icon-dollar.svg" alt=""></div>
-        <div id="price-digits"><p>142.55</p></div>
+        <input type="number" name="price" id="price-input" placeholder="142.55">
       </div>
     </div>
 
     <div class="tip-section">
       <h3>Select Tip %</h3>
       <div class="tip-grid">
-        <div class="percent-button">
+        <button class="percent-button percent-click">
           <p>5%</p>
-        </div>
-        <div class="percent-button">
+        </button>
+        <button class="percent-button percent-click">
           <p>10%</p>
-        </div>
-        <div class="percent-button">
+        </button>
+        <button class="percent-button percent-click">
           <p>15%</p>
-        </div>
-        <div class="percent-button">
+        </button>
+        <button class="percent-button percent-click">
           <p>25%</p>
-        </div>
-        <div class="percent-button">
+        </button>
+        <button class="percent-button percent-click">
           <p>50%</p>
-        </div>
-        <div class="percent-button" id="custom-button">
-          <p>Custom</p>
-        </div>
+        </button>
+        <input type="number" name="" class="percent-button" id="custom-button" placeholder="Custom">
       </div>
     </div>
 
@@ -53,7 +51,7 @@
       <h3>Number of people</h3>
       <div class="count-input">
         <div id="person-icon"><img src="./resources/images/icon-person.svg" alt=""></div>
-        <div id="person-count"><p>5</p></div>
+        <input type="number" name="person-count-no" id="person-count" placeholder="5">
       </div>
     </div>
 
@@ -63,7 +61,7 @@
           <h6>Tip amount</h6>
           <p class="subscript">/ person</p>
         </div>
-        <p class="digits" id="tip-total">$4.27</p>
+        <p class="digits" id="tip-total">$0.00</p>
       </div>
 
       <div class="display-con second">
@@ -71,16 +69,15 @@
           <h6>Total</h6>
           <p class="subscript">/ person</p>
         </div>
-        <p class="digits" id="price-total">$32.79</p>
+        <p class="digits" id="price-total">$0.00</p>
       </div>
 
-      <div class="reset-button">
+      <button class="reset-button">
         <p>RESET</p>
-      </div>
-
+      </button>
     </div>
 
   </div>
-
+<script src="./script.js"></script>
 </body>
 </html>
