@@ -230,10 +230,11 @@ h1 {
 
 #price-input::placeholder {
     font-family: 'Space Mono', monospace;
+    color: hsla(183, 100%, 15%, 0.358);
+    /* color: hsl(183, 100%, 15%); */
     text-align: right;
     font-weight: 700;
     font-size: 23px;
-    color: hsl(183, 100%, 15%);
 }
 
 #person-count {
@@ -253,7 +254,8 @@ h1 {
     text-align: right;
     font-weight: 700;
     font-size: 23px;
-    color: hsl(183, 100%, 15%);
+    color: hsla(183, 100%, 15%, 0.358);
+    /* color: hsl(183, 100%, 15%); */
 }
 
 #price-input:focus, #person-count:focus, #custom-button:focus {
